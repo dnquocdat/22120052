@@ -1,0 +1,30 @@
+#include "global.h"
+int dayofweek(int d, int m, int y);
+Date strToDate(string str);
+string dateToStr(Date date);
+nodeuser makelistuser(sinhvien sv);
+nodestaff makeliststaff(staff sf);
+nodecourse makelistcourse(Course cour);
+void addUser(nodeuser& dataUser, sinhvien sv);
+void addStaff(nodestaff& dataStaff, staff sf);
+sinhvien doc_thongtin_1_sinhvien(ifstream& r);
+staff doc_thongtin_1_staff(ifstream& r);
+void doc_danhsach_thongtin_sinhvien(ifstream& r, nodeuser& dataUser, string fileclass);
+void doc_danhsach_thongtin_staff(ifstream& r, nodestaff& dataStaff, string filedata);
+void xuat_danhsach_thongtin_sinhvien(nodeuser dataUser);
+void ghi_file_danhsach(ofstream& w, nodeuser dataUser, string path);
+void showdataUser(nodeuser dataUser);
+void showdataStaff(nodestaff dataStaff);
+void profile(nodeuser dataUser);
+void profilestaff();
+void addCourse(nodecourse& cour, Course course);
+void inputClassData();
+void importClassData();
+void doc_xuatconsole(string filename);
+void createSemester(Semester& currentSemester);
+void infoSemester(Semester currentSemester);
+void inputCoursesData();
+void importCoursesData();
+Course doc_1_course(ifstream& r);
+void ouputcourse_console(Course course, int no);
+
